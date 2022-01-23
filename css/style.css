@@ -12,6 +12,10 @@ a{
     text-decoration: none;
 }
 
+img{
+    width: 100%;
+}
+
 
 .font-poppins{
     font-family: 'Poppins', sans-serif;
@@ -25,6 +29,29 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
+.button{
+    display: inline-block;
+    color:#3F87F5;
+    background: rgba(244, 150, 210, 0.20);
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 24px;
+    padding: 13px 60px;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -ms-transition: all .4s linear;
+    -o-transition: all .4s linear;
+}
+
+.button:hover{
+    background: rgba(244, 150, 210, 0.30);
+}
+
+.fs-15{
+    font-size: 15px;
+}
+
 .fs-16{
     font-size: 16px;
 }
@@ -32,9 +59,56 @@ a{
 .fs-22{
     font-size: 22px;
 }
+.fs-28{
+    font-size: 28px;
+}
+
+.fs-36{
+    font-size: 36px;
+}
+
+.fs-38{
+    font-size: 38px;
+}
 
 .fs-48{
     font-size: 48px;
 }
 
 /* common CSS  */
+
+
+.fas.fa-check-circle{
+    color: blueviolet;
+}
+
+
+
+.bg-custom-card{
+    color: #fff;
+    background: #3F87F5;
+    box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
+    border-radius: 26px;
+    /* padding-top: 50px; */
+}
+
+
+.bg-custom-card .button{
+    color: #3F87F5;
+    background-color: #ffffff;
+}
+
+.bg-custom-card{
+    position: relative;
+    top: -30px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .QnA header h1{
+        font-size: 30px;
+    }
+  }
