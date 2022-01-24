@@ -85,11 +85,15 @@ img{
     color: blueviolet;
 }
 
-
+.card{
+    cursor: pointer;
+}
 
 .bg-custom-card{
     color: #fff;
     background: #3F87F5;
+    position: relative;
+    top: -30px;
     box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
     border-radius: 26px;
 }
@@ -100,10 +104,6 @@ img{
     background-color: #ffffff;
 }
 
-.bg-custom-card{
-    position: relative;
-    top: -30px;
-}
 
 .accordion-body p{
     color: #7E848C;
