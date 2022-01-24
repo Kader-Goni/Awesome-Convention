@@ -45,6 +45,7 @@
           </nav>
     </header>
     <!-- header part ends -->
+
     <!-- banner section starts -->
     <section id="banner">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -276,6 +277,27 @@
     <!-- our package section ends -->
 
 
+    <!-- Toast Alert Starts -->
+    <div class="container">
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <!-- <img src="./icons/" class="rounded me-2" alt="..."> -->
+
+            <i class="fas fa-gift fs-3 text-primary"></i>
+
+            <strong class="m-auto">Awesome Convention</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body text-center">
+            <p class="fs-5 text-primary">
+              YAY! 20% off on next booking.
+            </p>
+        </div>
+      </div>
+    </div>
+    <!-- Toast Alert Ends -->
+
+
     <!-- about-us section starts -->
     <section class="" id="about">
       <div class="container bg-d pt-5">
@@ -486,7 +508,19 @@
 
 
     
+
+
+    
     <!-- bootsrtap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Toast JS Coad -->
+    <script>
+      window.onload = (e) => {
+          let myToast = document.querySelector('.toast');
+          let bsToast = new bootstrap.Toast(myToast);
+          bsToast.show();
+      }
+    </script>
 </body>
 </html>
